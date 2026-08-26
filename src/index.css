@@ -1,0 +1,19 @@
+:root {
+  font-family: sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
