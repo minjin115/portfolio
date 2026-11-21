@@ -1,19 +1,12 @@
-:root {
-  font-family: sans-serif;
-  color: #222;
-  background: #fff;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  min-width: 320px;
-  min-height: 100vh;
-  margin: 0;
-}
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;550;600;700;800&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+:root { font-family: 'Inter','Pretendard',sans-serif; color: #202b38; background: white; font-synthesis: none; -webkit-font-smoothing: antialiased; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+body { margin: 0; min-width: 320px; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+img { display: block; max-width: 100%; }
+::selection { background: #8dbdf6; color: #202b38; }
+:focus-visible { outline: 2px solid #285d9b; outline-offset: 6px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
