@@ -6,6 +6,13 @@
 .tree-interview .eyebrow { font-size:10px; letter-spacing:.12em; color:var(--deep); line-height:1.7; }
 .ti-section { padding-block:clamp(64px,8vw,112px); }
 .ti-hero { padding-top:40px; }
+.ti-project-status { margin-bottom:36px; }
+.tree-interview .ti-status-badge { display:inline-block; padding:8px 14px; border:1px solid var(--deep); border-radius:24px; color:var(--deep); font-size:12px; background:var(--soft); margin:0 0 16px; }
+.ti-project-status dl { margin:0; }
+.ti-project-status dl > div { display:flex; flex-wrap:wrap; gap:8px 20px; margin-bottom:10px; font-size:13px; line-height:1.8; }
+.ti-project-status dt { font-weight:600; }
+.ti-project-status dd { margin:0; color:var(--muted); overflow-wrap:anywhere; }
+.tree-interview .ti-film-status { color:var(--deep); font-size:16px; margin:0; }
 .ti-back { display:inline-block; font-size:12px; color:var(--deep); padding-block:8px; margin-bottom:48px; }
 .ti-back:hover { text-decoration:underline; }
 .tree-interview .ti-english-title { color:var(--deep); font-size:clamp(24px,3.4vw,48px); letter-spacing:-.05em; line-height:1.3; margin-bottom:24px; }

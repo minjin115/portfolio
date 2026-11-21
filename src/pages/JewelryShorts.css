@@ -1,0 +1,61 @@
+.jewelry-shorts { color:var(--ink); }
+.jewelry-shorts h1 { font-size:clamp(44px,6vw,88px); line-height:1.07; letter-spacing:-.065em; font-weight:550; margin:0 0 32px; overflow-wrap:anywhere; }
+.jewelry-shorts h1 span { color:var(--sky); }
+.jewelry-shorts h2 { font-size:clamp(36px,4.5vw,64px); overflow-wrap:anywhere; }
+.jewelry-shorts h3 { font-size:22px; line-height:1.4; font-weight:500; letter-spacing:-.035em; margin:20px 0 12px; }
+.jewelry-shorts p { font-size:14px; line-height:1.9; color:var(--muted); word-break:keep-all; overflow-wrap:anywhere; }
+.jewelry-shorts .eyebrow { color:var(--deep); font-size:10px; }
+.jewelry-shorts .js-lead { font-size:clamp(18px,2vw,25px); color:var(--ink); }
+.js-hero { padding-top:36px; }
+.js-back { display:inline-block; padding:12px 0; margin-bottom:32px; color:var(--deep); font-size:12px; }
+.js-back:hover { text-decoration:underline; }
+.js-hero-grid,.js-overview { display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr); gap:clamp(32px,6vw,88px); align-items:center; }
+.js-hero-grid > *,.js-overview > *,.js-process > * { min-width:0; }
+.jewelry-shorts h3,.js-overview dd,.js-video-roles li { overflow-wrap:anywhere; }
+.js-featured { width:min(100%,320px); justify-self:center; }
+.js-featured > p { text-align:center; font-size:12px; }
+.js-section { padding-block:clamp(64px,8vw,112px); }
+.js-heading { margin-bottom:32px; }
+.js-tinted { background:var(--soft); }
+.js-overview { align-items:start; }
+.js-overview dl { margin:32px 0 0; }
+.js-overview dl > div { display:grid; grid-template-columns:56px minmax(0,1fr); gap:20px; padding-block:16px; border-top:1px solid var(--line); font-size:13px; line-height:1.8; }
+.js-overview dd { margin:0; color:var(--muted); }
+.js-video-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:32px; margin-top:40px; }
+.js-video-grid > * { min-width:0; }
+.js-video { aspect-ratio:9/16; background:#e0eaf5; overflow:hidden; border:1px solid #c8d8e7; }
+.js-video video { display:block; width:100%; height:100%; object-fit:contain; background:#202b38; }
+.js-placeholder { display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:12px; padding:24px; background:#edf2f8; height:100%; }
+.js-placeholder > span { color:var(--deep); font-size:28px; }
+.js-placeholder p { margin:0; }
+.js-placeholder small { font-size:11px; }
+.js-badge { display:inline-block; border:1px solid var(--deep); color:var(--deep); padding:5px 12px; border-radius:20px; font-size:11px; }
+.js-video-roles { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 0; padding:0; list-style:none; }
+.js-video-roles li { padding:6px 10px; border:1px solid #c8d8e7; border-radius:20px; color:var(--deep); font-size:11px; line-height:1.5; }
+.js-process { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:28px; padding:0; margin:48px 0 0; list-style:none; }
+.js-process li { border-top:1px solid var(--line); padding-top:20px; }
+.js-process li > span { font-size:11px; color:var(--deep); }
+.js-details { display:grid; gap:48px; margin-top:40px; }
+.js-details article { border-top:1px solid #c8d8e7; padding-top:12px; }
+.js-edit-topics { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px; margin-top:32px; }
+.js-edit-topics > div { min-width:0; border-top:1px solid #c8d8e7; }
+.js-case-frames.js-media-grid { grid-template-columns:repeat(2,minmax(0,1fr)); max-width:680px; margin-top:24px; }
+.js-case-frames img { aspect-ratio:9/16; object-fit:contain; }
+.js-case-timeline { margin-top:24px; }
+.jewelry-shorts .js-image-note { margin:0; padding-top:12px; border-top:1px solid #c8d8e7; font-size:12px; }
+@media (max-width:768px) { .js-edit-topics { grid-template-columns:1fr; gap:12px; } }
+@media (max-width:540px) { .js-case-frames.js-media-grid { grid-template-columns:1fr; max-width:320px; margin-inline:auto; } }
+.js-media-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr)); gap:24px; }
+.js-media-grid figure { margin:0; min-width:0; }
+.js-media-grid .js-placeholder { height:auto; aspect-ratio:16/9; }
+.js-media-grid img { width:100%; height:auto; }
+.js-media-grid figcaption { margin-top:12px; font-size:12px; color:var(--muted); }
+.js-reflection { max-width:760px; }
+.js-return { margin-top:32px; }
+[data-js-reveal] { transition:opacity .7s,transform .7s; }
+.js-pending { opacity:0; transform:translateY(20px); }
+@media (hover:hover) { .js-video-grid article { transition:transform .25s; } .js-video-grid article:hover { transform:translateY(-4px); } }
+@media (max-width:1024px) { .js-video-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .js-process { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:768px) { .js-hero-grid,.js-overview { grid-template-columns:1fr; gap:32px; } .js-featured { width:min(100%,320px); } }
+@media (max-width:540px) { .js-video-grid,.js-process { grid-template-columns:1fr; } .js-video-grid { max-width:360px; margin-inline:auto; } .js-hero { padding-top:24px; } .js-back { margin-bottom:24px; } }
+@media (prefers-reduced-motion:reduce) { .jewelry-shorts [data-js-reveal],.js-video-grid article { transition:none; } .js-pending { opacity:1; transform:none; } .js-video-grid article:hover { transform:none; } }
